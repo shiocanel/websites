@@ -1,0 +1,455 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo FE</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fe-working_cropped?qlt=82&wid=1440&ts=1709633867326&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fe-generous-window-areas-1?qlt=82&wid=1440&ts=1709633844950&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-cgi-exterior-front-1?qlt=82&wid=2560&ts=1706022074038&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fe-construction-worker-1?qlt=82&wid=3840&ts=1709633936236&dpr=off&fit=constrain);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-steering-wheel?qlt=82&wid=1024&ts=1705301668579&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html" class="active-model">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo FE.html">Volvo FE</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo FE.</h2>
+            <h2>Your versatile city truck.</h2>
+        </div>
+        <p>Lots of capacity in a compact format. The Volvo FE will manage an impressive load to size ratio while still
+            being a smooth operator in urban assignments like deliveries, construction and waste collection. Easy to
+            tailor to your needs. And it offers the flexibility to either go electric, or operate on gas or diesel.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks – Volvo FM Low Entry. Protecting what matters.webm" preload="metadata" loop
+            autoplay muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <h2>Choose your alternative fuel</h2>
+        <div class="select">
+            <p class="aleg-tip tip-active">Diesel</p>
+            <p class="aleg-tip">Electric</p>
+            <p class="aleg-tip">Gas-powered</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>Volvo FE</h2>
+                <p><span>Typical applications: </span>Delivery transport, urban construction, waste and recycling,
+                    municipal services</p>
+                <p><span>Engines: </span>250 - 350 hp</p>
+                <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                <a class="explore-button btn3" id="btn-get-now6">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FE%201%202000%20x%201250?qlt=82&wid=2560&ts=1730283184346&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Shaped for efficiency</h2>
+            <p>The LED headlamps, tighter gaps and Camera Monitor System are examples of the efficient Volvo FH design
+                features that reduce drag and save energy. On top of that, the adaptive high beam optimizes your vision
+                without disturbing others to improve road safety.</p>
+        </div>
+
+        <div>
+            <h2>The perfect cab climate</h2>
+            <p>A well-calibrated climate system distributes and circulates the air in your Volvo FH cab when you’re on
+                the move. When you switch the engine off for a rest, simply activate I-Park Cool to keep a comfortable
+                cab climate all the way through a good night’s sleep, using battery power alone.</p>
+        </div>
+
+        <div>
+            <h2>Everyday comfort</h2>
+            <p>The Volvo FH cabs are made to make your days on the road run smoothly. There’s plenty of storage, dual
+                refrigerators to keep food and beverages fresh and a microwave to heat your favorite snacks. And, of
+                course, a really comfortable bed.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">Build your Volvo FE</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">Electric, gas-powered or diesel. Five cab sizes. A range
+                        of exterior and interior trim levels. And a broad selection of options like drag-free disc
+                        brakes and I-Save, to make driving even more efficient, safe and productive. Truck Builder is
+                        available in selected markets, choose yours here:</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Make the Volvo FE your perfect drive</h2>
+        </div>
+        <p>Whether you use your Volvo FH for long-haul transportation or construction assignments, your gear changes
+            will be perfect and maneuvers will be sharp and controlled with I-Shift and Volvo Dynamic Steering. Take a
+            look at the gallery below to get more details about I-Shift, Volvo Dynamic Steering and other options for
+            your truck.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="just-flex" style="gap: 20px; flex-direction: column;">
+            <h2>Working around the truck</h2>
+            <div class="imag-container"
+                style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-in-profile-sunset?qlt=82&wid=1024&ts=1706338474502&dpr=off&fit=constrain);">
+            </div>
+            <div class="imag-container"
+                style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-walking-in-front-of-truck?qlt=82&wid=1440&ts=1705312417801&dpr=off&fit=constrain);">
+            </div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>I-Shift</h2>
+            <p>I-Shift offers a range of transmissions that can be tailored for everything from long haul to
+                construction and heavy transport. The I-Shift Dual Clutch changes gear without interruption in power
+                delivery. Equipped with crawler gears, I-Shift lets you manage extreme loads from standstill without
+                compromising with your fuel economy at high speeds.</p>
+        </div>
+
+        <div>
+            <h2>Volvo Dynamic Steering</h2>
+            <p>Volvo Dynamic Steering assists your steering like a steady hand, to make your driving easier and relieve
+                the strain. It also adds functionality to your driver support systems with active steering in different
+                situations. In addition, there’s an option to steer your truck with a remote control.</p>
+        </div>
+
+        <div>
+            <h2>Tandem Axle Lift</h2>
+            <p>Less energy needed, better traction and a tighter turning radius. The Tandem Axle Lift lets you disengage
+                and raise one of the driving axles. The traction and load capacity of a tandem drive, with the
+                driveability and efficiency of a single drive.</p>
+        </div>
+    </section>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+
+        arr_aleg_tip.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (index == 0) {
+                    arr_info_helper[0].innerHTML = `
+                        <h2>Volvo FE</h2>
+                    <p><span>Typical applications: </span>Delivery transport, urban construction, waste and recycling,
+                        municipal services</p>
+                    <p><span>Engines: </span>250 - 350 hp</p>
+                    <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                    <a class="explore-button btn3">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FE%201%202000%20x%201250?qlt=82&wid=2560&ts=1730283184346&dpr=off&fit=constrain&fmt=png-alpha";
+                    arr_aleg_tip[0].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+                if (index == 1) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FE Electric</h2>
+                            <p><span>Applications: </span>Delivery transports, construction, waste and recycling</p>
+                            <p><span>Combination weight: </span>Up to 27 tonnes</p>
+                            <p><span>Power: </span>Up to 225 kW</p>
+                            <p><span>Range: </span>up to 275 km</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Learn more</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FE%20Electric%201%202000%20x%201250?qlt=82&wid=2560&ts=1730281690287&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+
+                if (index == 2) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FE CNG</h2>
+                            <p><span>Applications: </span>Delivery transport, waste and recycling, municipal services</p>
+                            <p><span>Combination weight: </span>18-26 tonnes</p>
+                            <p><span>Power: </span>320 hp</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Learn more</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FE%20Gas-powered%201%202000%20x%201250?qlt=82&wid=2560&ts=1730283310727&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip tip-active`;
+                }
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

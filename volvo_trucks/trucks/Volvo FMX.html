@@ -1,0 +1,429 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo FMX</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-driving-in-mud?qlt=82&wid=1024&ts=1705314356564&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-harbour?qlt=82&wid=1440&ts=1705314356139&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-cgi-exterior-front-1?qlt=82&wid=2560&ts=1706087675139&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-quarry?qlt=82&wid=3840&ts=1706381173323&dpr=off&fit=constrain);
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-puddle-of-water?qlt=82&wid=2560&ts=1705314356421&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html" class="active-model">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo FMX.html">Volvo FMX</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo FMX.</h2>
+            <h2>Our toughest construction truck.</h2>
+        </div>
+        <p>The Volvo FMX is a tough construction truck, loaded with technology that makes the most demanding assignments
+            easier. Electric or diesel powertrains, a driven front axle, generous ground clearance and axles to carry
+            heavy loads. This truck is made to take you where others can’t, whether there’s a road or not.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/videoplayback.webm" preload="metadata" loop autoplay muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <h2>Choose your alternative fuel</h2>
+        <div class="select">
+            <p class="aleg-tip tip-active">Diesel</p>
+            <p class="aleg-tip">Electric</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>Volvo FMX</h2>
+                <p><span>Applications: </span>building and construction transport, mining and quarry transport, public
+                    service and utility transport</p>
+                <p><span>Power: </span>330–540 hp</p>
+                <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                <a class="explore-button btn3" id="btn-get-now4">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-diesel-cgi-exterior-1?qlt=82&wid=2560&ts=1705314355949&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="sec2">
+        <div>
+            <h2>Built for real construction work</h2>
+        </div>
+        <p>Tailor your Volvo FMX to manage your challenges with ease. The rigid truck chassis comes with features made
+            to boost your uptime and your productivity whether you drive on- or off-road. Take a closer look at our
+            chassis options in the image gallery below.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop
+                autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Driven front axle</h2>
+            <p>Get your Volvo FMX with a driven front axle for maximum traction. The Automatic Traction Control ensures
+                it’s engaged only when you need it. And disengages it when you don’t.</p>
+        </div>
+
+        <div>
+            <h2>300 mm ground clearance</h2>
+            <p>The rear air suspension, purpose-built for construction trucks, offers unbeatable comfort and traction
+                combined with 300 mm ground clearance.</p>
+        </div>
+
+        <div>
+            <h2>38-tonne bogie</h2>
+            <p>Boost your productivity with a durable solution. Our heavy-duty bogie takes up to 38 tonnes with ease. A
+                perfect match for the Volvo FMX.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">Tailor your construction truck</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">A robust exterior made to stand tough use. An iconic
+                        heavy-duty bumper, made from 3 mm high-grade steel, there to shield your front from dents and
+                        broken headlights in any terrain. Axles that carry your loads and provide traction. A broad
+                        range of electric and diesel powertrains helps you to tailor the Volvo FMX for your needs. Truck
+                        Builder is available in selected markets, choose yours here:</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="imag-container"></div>
+        <div class="sec2-alt-text">
+            <h2>Power control with I-Shift</h2>
+            <p>I-Shift offers a range of automatic transmissions that helps you get the best out of your powertrain to
+                make the most of your energy. Choose crawler gears and tailored software for extreme startability.
+                One-pedal driving is available when taking on tough terrain and shifting between forward and reverse.
+                I-Shift will make every day easier when conditions are tough.</p>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="sec2-alt-text">
+            <h2>Steady with Volvo Dynamic Steering</h2>
+            <p>Volvo Dynamic Steering helps you maneuver steadily and precisely with less effort. It filters out bumps,
+                jerks and twists to take the strain off your shoulders. The system adds functions to the driver support
+                systems to improve safety and productivity. On top of it all, Volvo Dynamic Steering enables External
+                Steering that lets you drive your truck with a remote control to improve productivity.</p>
+        </div>
+        <div class="imag-container"
+            style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-driver-gravel-pit?qlt=82&wid=2560&ts=1705314356094&dpr=off&fit=constrain);">
+        </div>
+    </section>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+
+        arr_aleg_tip.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (index == 0) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FMX</h2>
+                        <p><span>Applications: </span>building and construction transport, mining and quarry transport, public
+                            service and utility transport</p>
+                        <p><span>Power: </span>330–540 hp</p>
+                        <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                        <a class="explore-button btn3">
+                            <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-diesel-cgi-exterior-1?qlt=82&wid=2560&ts=1705314355949&dpr=off&fit=constrain&fmt=png-alpha"
+                    arr_aleg_tip[0].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                }
+                if (index == 1) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FMX Electric</h2>
+                        <p><span>Applications: </span>building and construction transport, public service and utility transport</p>
+                        <p><span>Combination weight: </span>44 tonnes</p>
+                        <p><span>Power: </span>490 kW</p>
+                        <p><span>Range: </span>up to 300 km</p>
+                        <a class="explore-button btn3">
+                            <p class="text-btn">Learn more about the Volvo FMX Electric</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-electric-cgi-exterior-1?qlt=82&wid=2560&ts=1705314361132&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip tip-active`;
+                }
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

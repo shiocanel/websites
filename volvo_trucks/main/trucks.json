@@ -1,0 +1,392 @@
+[
+  {
+    "transportName": "Volvo FH16 Aero",
+    "description": "The Volvo FH16 Aero is designed for heavy transport, shaped and powered for extended productivity. Its aerodynamic design and powerful D17 engine boost performance while saving fuel. It delivers up to 780 hp and uses features like the Camera Monitor System to reduce drag and improve visibility. The spacious Globetrotter XXL cab offers maximum comfort for long hauls, and upgrades allow gross combination weights up to 150 tonnes for extremely heavy loads.",
+    "application": "Efficient heavy transport",
+    "powerHP": 780,
+    "grossCombinationWeight": 150,
+    "engines": [
+      "D17"
+    ],
+    "cabs": [
+      "Globetrotter XXL"
+    ],
+    "range": "Heavy haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-cgi-exterior-1?qlt=82&wid=2560&ts=1706022245131&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-cms-mountains?qlt=82&wid=1024&ts=1705319707258&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-front-peak?qlt=82&wid=1440&ts=1705319707109&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-close-up-seat?qlt=82&wid=2560&ts=1705319706991&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-turning-with-excavator?qlt=82&wid=1024&ts=1705319871919&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-turning-with-excavator?qlt=82&wid=1024&ts=1705319871919&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/videoplayback.mp4",
+      "video/Volvo Trucks - The Epic Split feat. Van Damme.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FH Aero",
+    "description": "The Volvo FH Aero is designed for efficient long-haul transport. It features an aerodynamic cab that reduces fuel consumption. Diesel models offer 420–540 hp for extended highway use. Its streamlined shape and systems like the Camera Monitor System lower energy use, and the Globetrotter XXL cab ensures driver comfort on long routes.",
+    "application": "Efficient heavy transport",
+    "powerHP": 540,
+    "grossCombinationWeight": 80,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Globetrotter XXL"
+    ],
+    "range": "Long haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-diesel-cgi-exterior-2?qlt=82&wid=2560&ts=1706022305150&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-in-hangar?qlt=82&wid=1024&ts=1705317793238&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-man-driving?qlt=82&wid=1440&ts=1705317793746&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-usb-connection?qlt=82&wid=2560&ts=1706190002548&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-truck-in-landscape?qlt=82&wid=1024&ts=1705317793319&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-close-up-cms?qlt=82&wid=1024&ts=1706189331086&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks - The new Volvo VNL - Living Environment Walkaround.mp4",
+      "video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FH16",
+    "description": "Volvo FH16 is built for the most demanding heavy transport duties. Its 16-liter D17 engine delivers up to 780 hp, making it the most powerful engine in a Volvo truck. This engine also produces up to 3800 Nm of torque to pull very heavy loads. Reinforced axles and I-Shift with crawler gears help it start heavy combinations smoothly. Comfortable high-roof sleeper cabs provide rest space for drivers on long journeys.",
+    "application": "Efficient heavy transport",
+    "powerHP": 780,
+    "grossCombinationWeight": 150,
+    "engines": [
+      "D17"
+    ],
+    "cabs": [
+      "Globetrotter XL",
+      "Globetrotter XXL"
+    ],
+    "range": "Heavy haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-cgi-exterior-1?qlt=82&wid=2560&ts=1705310176284&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-headlight?qlt=82&wid=1024&ts=1705301662474&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-roundabout?qlt=82&wid=1440&ts=1705301668404&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-flag-seat?qlt=82&wid=2560&ts=1705301662569&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-emblem?qlt=82&wid=1024&ts=1705301662443&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-container-hall?qlt=82&wid=1024&ts=1705301662538&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4",
+      "video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FH",
+    "description": "The Volvo FH is the iconic long-haul truck, built to keep you comfortable and safe over the longest stretches. It offers 420–540 hp power and is designed for a range of applications from highway freight to mining transport. Aerodynamic design features and driver aids help reduce fuel use. With spacious cabs and luxury amenities, the FH turns driving into quality time while hauling heavy loads.",
+    "application": "Efficient heavy transport",
+    "powerHP": 540,
+    "grossCombinationWeight": 120,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Globetrotter",
+      "Globetrotter XL",
+      "Globetrotter XXL"
+    ],
+    "range": "Long haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-diesel-cgi-exterior-1?qlt=82&wid=2560&ts=1705312479954&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-driver-smiling?qlt=82&wid=1024&ts=1706354175330&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-cms-from-behind?qlt=82&wid=1440&ts=1705312417968&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-standing-by-containers?qlt=82&wid=2560&ts=1705312418151&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-driver-highway?qlt=82&wid=1024&ts=1705312418017&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-adjusting-temperature?qlt=82&wid=1024&ts=1705312418231&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – Volvo FM Low Entry. Protecting what matters.mp4",
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FMX",
+    "description": "Volvo FMX is Volvo’s toughest construction truck, built for building, mining and quarry transport. It provides 330–540 hp and is available with special features like a driven front axle for extra traction. Heavy-duty suspension (including a 38-tonne rear bogie) and 300 mm ground clearance allow it to carry very heavy loads on rough terrain. The FMX’s rugged chassis and reinforced cab make it ideal for on- and off-road construction work.",
+    "application": "Efficient heavy transport",
+    "powerHP": 540,
+    "grossCombinationWeight": 90,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Globetrotter"
+    ],
+    "range": "Construction",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-diesel-cgi-exterior-1?qlt=82&wid=2560&ts=1705314355949&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-driving-in-mud?qlt=82&wid=1024&ts=1705314356564&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-harbour?qlt=82&wid=1440&ts=1705314356139&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-unloading-stone?qlt=82&wid=2560&ts=1705314356611&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-gravel-road-from-above?qlt=82&wid=1024&ts=1706281742351&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-tandem-axle-lift-1?qlt=82&wid=1024&ts=1705314355983&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4",
+      "video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FM",
+    "description": "Volvo FM is a flexible specialist for medium-heavy regional transport. It is available with 330–500 hp engines for a variety of jobs including delivery, construction and utility transport. The FM offers a choice of cabs (day, sleeper, and low-entry) and sturdy components for demanding service. It provides high maneuverability and safety features for busy routes, making it a reliable work truck.",
+    "application": "Efficient heavy transport",
+    "powerHP": 500,
+    "grossCombinationWeight": 44,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Day cab",
+      "Sleeper cab",
+      "Low-entry cab"
+    ],
+    "range": "Regional haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-deisel-cgi-exterior-1?qlt=82&wid=2560&ts=1705323435777&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-pedestrian-crossing?qlt=82&wid=1024&ts=1705321931203&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-sneak-peak?qlt=82&wid=1440&ts=1705321931116&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-using-interface?qlt=82&wid=2560&ts=1706451461343&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-logo-on-seat?qlt=82&wid=1024&ts=1705321931098&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-firetruck?qlt=82&wid=1024&ts=1706451489004&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.mp4",
+      "video/Volvo Trucks - The Epic Split feat. Van Damme.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FE",
+    "description": "Volvo FE is a versatile city truck for delivery transport, construction, waste and recycling. It uses diesel engines from 250 to 350 hp. The FE’s low-entry cab design provides great visibility for urban driving, and it can be configured for electric or gas power as well. With up to 27 tonnes gross combination weight, it can carry substantial loads, making it ideal for demanding urban operations.",
+    "application": "Efficient heavy transport",
+    "powerHP": 350,
+    "grossCombinationWeight": 27,
+    "engines": [
+      "D8"
+    ],
+    "cabs": [
+      "Low-entry day cab"
+    ],
+    "range": "Urban distribution",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FE%20Electric%201%202000%20x%201250?qlt=82&wid=2560&ts=1730281690287&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/FE-construction-unloading?qlt=82&wid=2560&ts=1709633845769&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/FE-construction-lifting-alone?qlt=82&wid=2560&ts=1709633846564&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/FE-construction-two-workers?qlt=82&wid=1024&ts=1709633844226&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/FE-headlights?qlt=82&wid=1440&ts=1709633845968&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fe-generous-window-areas-1?qlt=82&wid=1440&ts=1709633844950&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks - The new Volvo VNL - Living Environment Walkaround.mp4",
+      "video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo FL",
+    "description": "Volvo FL is a compact delivery truck for city transport and light construction. It has 210–320 hp and is offered in 4x2 or 4x4 versions. Available with two or three cab versions, it emphasizes safety (low cab, large windows) for urban driving. The FL is agile in tight streets and ideal for deliveries, rescue or off-road tasks in built-up areas.",
+    "application": "Efficient heavy transport",
+    "powerHP": 320,
+    "grossCombinationWeight": 19,
+    "engines": [
+      "D8"
+    ],
+    "cabs": [
+      "Day cab",
+      "Crew cab"
+    ],
+    "range": "Urban distribution",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/Volvo%20FL%20Electric%201%202000%20x%201250?qlt=82&wid=2560&ts=1730279500206&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fl-highlights-cyclist?qlt=82&wid=2560&ts=1709633936316&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fe-sensor?qlt=82&wid=2560&ts=1709633846742&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fl-mirror?qlt=82&wid=1024&ts=1709633873338&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/FL_safety_cyclist?qlt=82&wid=1440&ts=1709633936377&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/fl-workingaround-person-new?qlt=82&wid=1440&ts=1709633873564&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4",
+      "video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VM",
+    "description": "Volvo VM is a versatile multi-purpose truck for distribution and vocational transport. It uses D7F engines rated at 220, 270 or 330 hp. With gross combination weights from 25 to 63 tonnes, it can handle a variety of tasks from rigid trucks to 6x4 dumpers. Offered with day cab or sleeper, it provides a modern chassis and high payload capacity for different regional haul operations.",
+    "application": "Efficient heavy transport",
+    "powerHP": 330,
+    "grossCombinationWeight": 63,
+    "engines": [
+      "D7F"
+    ],
+    "cabs": [
+      "Day cab",
+      "Sleeper cab"
+    ],
+    "range": "Regional distribution",
+    "availability": "See market sites for details",
+    "images": [
+      "https://effective-tuning.com/blog/wp-content/uploads/2021/02/volvo-truck-v-series-tuning-1.jpg",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm-applications?qlt=82&wid=1440&ts=1581839646673&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm?qlt=82&wid=1440&ts=1698534655950&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm-day-cab?qlt=82&wid=2560&ts=1698534663952&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm-tractor-4x2?qlt=82&wid=768&ts=1581840286358&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm-sleeper-cab?qlt=82&wid=768&ts=1581840354936&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – Volvo FM Low Entry. Protecting what matters.mp4",
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VNL series",
+    "description": "Volvo VNL series is a North American long-haul truck designed for highway efficiency. It features a D13TC engine with 405–500 hp and technologies like turbo compounding and I-See for fuel savings. The VNL cab offers premium amenities (including the industry’s first reclining bunk) for driver comfort. It is optimized for full-truckload and specialized freight on the long haul, emphasizing uptime and economy.",
+    "application": "Efficient heavy transport",
+    "powerHP": 500,
+    "grossCombinationWeight": 80,
+    "engines": [
+      "D13TC"
+    ],
+    "cabs": [
+      "Day cab",
+      "Mid roof sleeper",
+      "Raised roof sleeper"
+    ],
+    "range": "Long haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/croppedVNL860_edge_side?qlt=82&wid=2560&ts=1730299601737&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD3_8271_RT?qlt=82&wid=1024&ts=1730380495030&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD2_7294_RT?qlt=82&wid=1440&ts=1730380511630&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnl860_ultimate_1?qlt=82&wid=2560&ts=1730380528989&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD3_7997_RT?qlt=82&wid=1024&ts=1730380536447&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnl860_ultimate_4?qlt=82&wid=1024&ts=1730380556151&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks - The new Volvo VNL - Living Environment Walkaround.mp4",
+      "video/Volvo Trucks - The Epic Split feat. Van Damme.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VNR series",
+    "description": "Volvo VNR series is a regional-haul truck built for urban delivery and shorter routes. It uses a D13 engine with 405–455 hp and has a compact design for maneuverability. The VNR’s tight turning radius and enhanced visibility features are ideal for city streets. It comes in day-cab and small sleeper versions, and offers modern driver aids to improve efficiency on regional runs.",
+    "application": "Efficient heavy transport",
+    "powerHP": 455,
+    "grossCombinationWeight": 36,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Day cab",
+      "Sleeper cab"
+    ],
+    "range": "Regional haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnr%20side%20final?qlt=82&wid=2560&ts=1741355771540&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Headlight?qlt=82&wid=1440&ts=1741173166846&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Interior?qlt=82&wid=1024&ts=1741173166993&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20300?qlt=82&wid=1024&ts=1741173167010&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20440?qlt=82&wid=1024&ts=1741173166941&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Family%20Shot?qlt=82&wid=1024&ts=1741619300083&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.mp4",
+      "video/videoplayback.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VNX series",
+    "description": "Volvo VNX series are heavy-haul tractors built for the toughest jobs. They can be equipped with a 16-liter D16 engine up to 605 hp to provide maximum power. The VNX features a heavy-duty chassis and full-size day cab. It is designed for loads up to around 225,000 lbs (about 102 tonnes), making it ideal for logging, machinery, and super-heavy haulage.",
+    "application": "Efficient heavy transport",
+    "powerHP": 605,
+    "grossCombinationWeight": 102,
+    "engines": [
+      "D16"
+    ],
+    "cabs": [
+      "Day cab"
+    ],
+    "range": "Heavy haul",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnr%20side%20final?qlt=82&wid=2560&ts=1741355771540&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Headlight?qlt=82&wid=1440&ts=1741173166846&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Interior?qlt=82&wid=1024&ts=1741173166993&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20300?qlt=82&wid=1024&ts=1741173167010&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20440?qlt=82&wid=1024&ts=1741173166941&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Family%20Shot?qlt=82&wid=1024&ts=1741619300083&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.mp4",
+      "video/videoplayback.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VHD series",
+    "description": "Volvo VHD series are rugged vocational trucks built for construction, public utility and refuse work. They use Volvo’s D11 and D13 engines (325–500 hp) to provide the needed power and torque. All VHDs are offered with severe-duty I-Shift transmissions (including crawler gears) for maximum GCW performance. The VHD features a heavy-duty chassis, steel bumper, and an available low-height cab, making it a reliable choice for the toughest jobsite operations.",
+    "application": "Efficient heavy transport",
+    "powerHP": 500,
+    "grossCombinationWeight": 80,
+    "engines": [
+      "D11",
+      "D13"
+    ],
+    "cabs": [
+      "Day cab"
+    ],
+    "range": "Construction",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnr%20side%20final?qlt=82&wid=2560&ts=1741355771540&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Headlight?qlt=82&wid=1440&ts=1741173166846&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Interior?qlt=82&wid=1024&ts=1741173166993&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20300?qlt=82&wid=1024&ts=1741173167010&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20440?qlt=82&wid=1024&ts=1741173166941&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Family%20Shot?qlt=82&wid=1024&ts=1741619300083&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks - The Epic Split feat. Van Damme.mp4",
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4"
+    ]
+  },
+  {
+    "transportName": "Volvo VAH series",
+    "description": "Volvo VAH series are specialized auto-hauler tractors with a reduced-height cab for maximum loading flexibility. They use a D13 engine producing 405–500 hp to provide power while saving weight. Available as day-cab (VAH 300) or sleeper (VAH 400/600) models, they have optimized roof heights for carrying multiple vehicles. Premium safety and driver comfort features support the demanding vehicle transport mission.",
+    "application": "Efficient heavy transport",
+    "powerHP": 500,
+    "grossCombinationWeight": 80,
+    "engines": [
+      "D13"
+    ],
+    "cabs": [
+      "Day cab",
+      "Sleeper cab"
+    ],
+    "range": "Vehicle transport",
+    "availability": "See market sites for details",
+    "images": [
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnr%20side%20final?qlt=82&wid=2560&ts=1741355771540&dpr=off&fit=constrain&fmt=png-alpha",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Headlight?qlt=82&wid=1440&ts=1741173166846&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Interior?qlt=82&wid=1024&ts=1741173166993&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20300?qlt=82&wid=1024&ts=1741173167010&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20440?qlt=82&wid=1024&ts=1741173166941&dpr=off&fit=constrain",
+      "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20Volvo%20VNR%20Family%20Shot?qlt=82&wid=1024&ts=1741619300083&dpr=off&fit=constrain"
+    ],
+    "videos": [
+      "video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.mp4",
+      "video/Volvo Trucks – The power of the Volvo FH16 Aero.mp4"
+    ]
+  }
+]

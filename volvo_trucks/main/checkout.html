@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout | Volvo Trucks</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="checkout.js" defer></script>
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        #logo {
+            display: flex;
+            align-items: center;
+        }
+
+        #logo img {
+            width: 40px;
+            margin-right: 10px;
+        }
+
+        #cart-link {
+            display: flex;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        #cart-counter {
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            padding: 5px 12px;
+            font-size: 16px;
+            margin-left: 10px;
+        }
+
+        main {
+            padding: 40px;
+        }
+
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            margin-bottom: 30px;
+            font-weight: 600;
+            color: #333;
+        }
+
+        .cart-overview {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .cart-items {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .total-price {
+            font-size: 20px;
+            font-weight: 600;
+            margin-top: 20px;
+        }
+
+        .billing-info {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            display: block;
+        }
+
+        input[type="text"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+        }
+
+        input[type="text"]:focus {
+            border-color: #3498db;
+        }
+
+        .payment-options {
+            background-color: #fff;
+            padding: 20px;
+            margin-bottom: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .payment-method {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .checkout-actions {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+        }
+
+        .back-to-cart,
+        .place-order {
+            padding: 12px 30px;
+            background-color: #3498db;
+            color: white;
+            border: none;
+            font-size: 16px;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .back-to-cart:hover,
+        .place-order:hover {
+            background-color: #2980b9;
+        }
+
+        footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #333;
+            color: white;
+        }
+
+        footer p {
+            font-size: 14px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <img src="../imagini/Volvo-Logo.webp" alt="Volvo Logo">
+            <p>Volvo Trucks</p>
+        </div>
+        <div id="cart-link">
+            <i class="fa-solid fa-cart-shopping"></i> Cart <span id="cart-counter">0</span>
+        </div>
+    </header>
+
+    <main class="checkout-container">
+        <h1>Checkout</h1>
+
+        <section class="cart-overview">
+            <h2>Cart Items</h2>
+            <div id="cart-items" class="cart-items">
+            </div>
+            <div class="total-price">
+                <p><strong>Total:</strong> $<span id="total-price">0</span></p>
+            </div>
+        </section>
+
+        <section class="billing-info">
+            <h2>Billing Information</h2>
+            <form id="billing-form">
+                <div class="form-group">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your full name">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address" required placeholder="Enter your address">
+                </div>
+                <div class="form-group">
+                    <label for="city">City</label>
+                    <input type="text" id="city" name="city" required placeholder="Enter your city">
+                </div>
+                <div class="form-group">
+                    <label for="postal-code">Postal Code</label>
+                    <input type="text" id="postal-code" name="postal-code" required
+                        placeholder="Enter your postal code">
+                </div>
+                <div class="form-group">
+                    <label for="country">Country</label>
+                    <input type="text" id="country" name="country" required placeholder="Enter your country">
+                </div>
+            </form>
+        </section>
+
+        <section class="payment-options">
+            <h2>Payment Method</h2>
+            <div class="payment-method">
+                <label>
+                    <input type="radio" name="payment" value="credit-card" checked> Credit Card
+                </label>
+                <label>
+                    <input type="radio" name="payment" value="paypal"> PayPal
+                </label>
+            </div>
+        </section>
+
+        <div class="checkout-actions">
+            <button id="back-to-cart" class="back-to-cart">Back to Cart</button>
+            <button id="place-order" class="place-order">Place Order</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>Volvo Trucks &copy; 2025 | All Rights Reserved</p>
+    </footer>
+
+
+
+    <script>
+
+        function loadCart() {
+            const cart = localStorage.getItem("cart");
+            return cart ? JSON.parse(cart) : [];
+        }
+
+        function displayCart() {
+            const cart = loadCart();
+            const cartItemsContainer = document.getElementById("cart-items");
+            const totalPriceElement = document.getElementById("total-price");
+
+            cartItemsContainer.innerHTML = "";
+
+            if (cart.length === 0) {
+                cartItemsContainer.innerHTML = "<p>Your cart is empty.</p>";
+                totalPriceElement.textContent = "0";
+            } else {
+                let totalPrice = 0;
+
+                cart.forEach((product) => {
+                    const productDiv = document.createElement("div");
+                    productDiv.classList.add("cart-item");
+
+                    productDiv.innerHTML = `
+                <div class="product-info">
+                    <h3>${product.name}</h3>
+                    <p><strong>Power:</strong> ${product.power}</p>
+                </div>
+            `;
+                    cartItemsContainer.appendChild(productDiv);
+
+                    totalPrice += parseFloat(product.price);
+                });
+
+                totalPriceElement.textContent = totalPrice.toFixed(2);
+            }
+        }
+
+        function placeOrder() {
+            const name = document.getElementById("name").value;
+            const address = document.getElementById("address").value;
+            const city = document.getElementById("city").value;
+            const postalCode = document.getElementById("postal-code").value;
+            const country = document.getElementById("country").value;
+
+            const paymentMethod = document.querySelector('input[name="payment"]:checked').value;
+
+            if (!name || !address || !city || !postalCode || !country) {
+                alert("Please fill in all billing details.");
+                return;
+            }
+
+            const cart = loadCart();
+            if (cart.length === 0) {
+                alert("Your cart is empty. Please add products before placing an order.");
+                return;
+            }
+
+            const order = {
+                name,
+                address,
+                city,
+                postalCode,
+                country,
+                paymentMethod,
+                cart,
+                totalPrice: document.getElementById("total-price").textContent,
+                date: new Date().toLocaleString(),
+            };
+
+            console.log("Order placed:", order);
+
+            localStorage.removeItem("cart");
+
+            alert(`Order placed successfully! Your total is $${order.totalPrice}.`);
+
+            window.location.href = "../main/index.html";
+        }
+
+        document.addEventListener("DOMContentLoaded", () => {
+            displayCart(); 
+
+            document.getElementById("place-order").addEventListener("click", placeOrder);
+
+            document.getElementById("back-to-cart").addEventListener("click", () => {
+                window.location.href = "../main/cart.html";
+            });
+        });
+
+
+    </script>
+</body>
+
+</html>

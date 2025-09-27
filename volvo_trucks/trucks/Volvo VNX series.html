@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo VNX Series</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 80%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://tadvantagesites-com.cdn-convertus.com/uploads/sites/405/2021/04/VO-VNX300-18-0012.jpg);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://img.forconstructionpros.com/files/base/acbm/fcp/image/2018/03/VNX_740__Hauler_Quarry.5aaac89094e29.5ab3f14e326d0.png?auto=format%2Ccompress&rect=399%2C309%2C1434%2C807&q=70);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnr%20builder%20final?qlt=82&wid=2560&ts=1741355812497&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-quarry?qlt=82&wid=3840&ts=1706381173323&dpr=off&fit=constrain);
+            background-attachment: fixed;
+            background-size: cover;
+
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/All-new%20VNR%20Forward%20Pedestrian%20Detection?qlt=82&wid=2560&ts=1741355840478&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html" class="active-model">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo VNX series.html">Volvo VNX Series</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>The Volvo VNX Series.</h2>
+            <h2 style="width: 80%;">A heavy hitter for heavy haulage.</h2>
+        </div>
+        <p>The Volvo VNX is built specifically for the needs of heavy-haul trucking operations. Available with up to 605
+            hp and 2,050 lb-ft of torque, the VNX provides the power and performance demanded for heavy-haul
+            applications such as logging, machinery transport, and long combination vehicles.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks - The Epic Split feat. Van Damme.webm" preload="metadata" loop autoplay
+            muted></video>
+    </div>
+
+    <section class="truck-galerie" style="margin-top: 5%;">
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+</body>
+
+</html>

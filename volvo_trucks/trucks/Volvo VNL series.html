@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo VNL Series</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD3_8271_RT?qlt=82&wid=1024&ts=1730380495030&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD2_7294_RT?qlt=82&wid=1440&ts=1730380511630&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/croppedVNL860_edgeblack_Front?qlt=82&wid=2560&ts=1730299624204&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fmx-quarry?qlt=82&wid=3840&ts=1706381173323&dpr=off&fit=constrain);
+            background-attachment: fixed;
+            background-size: cover;
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/vnl860_ultimate_behind?qlt=82&wid=2560&ts=1730295616220&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html" class="active-model">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo VNL series.html">Volvo VNL Series</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo VNL.</h2>
+            <h2>Designed to change everything.</h2>
+        </div>
+        <p>Safer, more fuel-efficient, and more driver-focused. This long-haul, heavy-duty truck for the North American
+            market has been rebuilt from the ground up, delivering not only new standards in comfort and performance but
+            also up to a 10% improvement in fuel efficiency on the previous model. And it’s a brand-new platform for
+            future propulsion technologies, redefining driver comfort and setting new standards in long-haul.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/videoplayback.webm" preload="metadata" loop autoplay muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <h2>Choose your alternative fuel</h2>
+        <div class="select">
+            <p class="aleg-tip tip-active">VNL</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>The Volvo VNL</h2>
+                <p><span>Applications: </span>Long-haul transport assignments</p>
+                <p><span>Power: </span>405-500 hp</p>
+                <p><span>Availability: </span>US, Canada</p>
+                <a class="explore-button btn3" id="btn-get-now9">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/croppedVNL860_edge_side?qlt=82&wid=2560&ts=1730299601737&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.webm" preload="metadata"
+                loop autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Prepared for nearly every "what if?"</h2>
+            <p>You don’t become the brand known for safety by playing it safe. Brand new to the VNL, the Volvo Active
+                Safety Platform keeps drivers and pedestrians safe with a suite of advanced driver assistance safety
+                systems.</p>
+        </div>
+
+        <div>
+            <h2>A space that works for you</h2>
+            <p>We’ve redesigned the Volvo VNL’s living environment to help drivers sleep better, so they can work
+                better. And since we know that no two drivers are alike, many of the features can be tailored to create
+                your own bespoke environment.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">What does your ideal Volvo VNL look like?</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">Model, configuration, powertrain, safety features, trim
+                        level, living space… let the range of choices inspire you and tailor the truck to your exact
+                        specifications.</p>
+                    <p style="width: 60%; margin-bottom: 4rem;">Explore the safety, connectivity and software packages
+                        on offer, and see how trim packages like Core, Edge, Edge Black and Ultimate deliver touches of
+                        premium functionality. </p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="imag-container"></div>
+        <div class="sec2-alt-text">
+            <h2>Redefining performance</h2>
+            <p>The Volvo VNL’s ground-breaking powertrain solution begins with the D13 engine and the I-Shift automated
+                manual transmission. Volvo torque packages, including our unique I-Torque, bring you a generation of
+                Volvo Power that is more functional and more efficient than ever.</p>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="sec2-alt-text">
+            <h2>The most connected truck in the industry</h2>
+            <p>Whether you’re an owner/operator or a fleet manager, Volvo Connect gives you a simple, convenient
+                location where you can connect to all critical aspects of your truck. One login, one holistic view.</p>
+        </div>
+        <div class="imag-container"
+            style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/PD2_2294_RT?qlt=82&wid=2560&ts=1730299616700&dpr=off&fit=constrain);">
+        </div>
+    </section>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+    </script>
+
+</body>
+
+</html>

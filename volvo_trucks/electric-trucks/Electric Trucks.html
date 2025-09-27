@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Electric trucks</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 0 auto;
+            width: 100rem;
+            margin-top: 7rem;
+        }
+
+        .sec2 h1 {
+            font-size: 3rem;
+            margin-bottom: 1.6rem;
+            text-align: center;
+        }
+
+        .sec2 .sus {
+            font-size: 1.2rem;
+            width: 60%;
+            text-align: center;
+            margin: 0 auto;
+            margin-bottom: 4rem;
+        }
+
+        .model-list {
+            display: flex;
+            width: 100%;
+            align-items: flex-end;
+            justify-content: space-between;
+        }
+
+        .model-card {
+            width: 45rem;
+            color: gray;
+            display: flex;
+            gap: 10px;
+            flex-direction: column;
+        }
+
+        .model-card .imag {
+            width: 45rem;
+            height: 45rem;
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+
+        .name {
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin-bottom: 1rem;
+            color: black;
+        }
+
+        .model-card {
+            font-size: 1.2rem;
+        }
+
+        .model-card button p {
+            font-size: 1.2rem;
+        }
+
+        .application {
+            color: black;
+            font-weight: bold;
+        }
+
+        .tailor {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 5%;
+        }
+
+        .tailor img {
+            width: 70%;
+        }
+
+        .tailor h2 {
+            font-size: 2.2rem;
+        }
+
+        .tailor-helper {
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 30px;
+        }
+
+        .used-trucks {
+            width: 70%;
+            height: 60rem;
+            background-size: 100%;
+            background-position: center;
+            margin: 0 auto;
+            margin-top: 5%;
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        .used-trucks h2 {
+            font-size: 1.8rem;
+        }
+
+        .used-trucks p {
+            font-size: 1.2rem;
+        }
+
+        .used-trucks-helper {
+            width: 100%;
+            height: 30rem;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/electric-landing-volvo-fm-person-walking-in-front-of-truck?qlt=82&wid=1440&ts=1706381254536&dpr=off&fit=constrain);
+            background-size: cover;
+            background-position: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            gap: 20px;
+            align-items: center;
+            color: white;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-bridge-ocean?qlt=82&wid=1920&ts=1705317793423&dpr=off&fit=constrain);
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../electric-trucks/Electric Trucks.html" class="active-model">Electric trucks</a>
+            <a href="../electric-trucks/Volvo FH Aero Electric.html">Volvo FH Aero Electric</a>
+            <a href="../electric-trucks/Volvo FH Electric.html">Volvo FH Electric</a>
+            <a href="../electric-trucks/Volvo FMX Electric.html">Volvo FMX Electric</a>
+            <a href="../electric-trucks/Volvo FM Electric.html">Volvo FM Electric</a>
+            <a href="../electric-trucks/Volvo FM Low Entry.html">Volvo FM Low Entry</a>
+            <a href="../electric-trucks/Volvo FE Electric.html">Volvo FE Electric</a>
+            <a href="../electric-trucks/Volvo FL Electric.html">Volvo FL Electric</a>
+            <a href="../electric-trucks/Why Electric Trucks.html">Why electric trucks?</a>
+            <a href="../electric-trucks/FAQ.html">FAQ</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../electric-trucks/Electric Trucks.html">Electric trucks</a>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/videoplayback.webm" preload="metadata" loop autoplay muted></video>
+    </div>
+
+    <section class="sec2">
+        <h1>Our electric truck range</h1>
+        <p class="sus">We’re here to make your shift to electric as smooth as possible. From helping you choose the
+            right electric truck to addressing charging and range, and securing deliveries. We’ll be your main point of
+            contact.</p>
+
+        <div class="model-list">
+            <div class="model-card">
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+        <div class="model-list">
+            <div class="model-card">
+
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+        <div class="model-list">
+            <div class="model-card">
+
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+        <div class="model-list">
+            <div class="model-card">
+
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+        <div class="model-list">
+            <div class="model-card">
+
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+        <div class="model-list">
+            <div class="model-card">
+
+            </div>
+            <div class="model-card">
+
+            </div>
+        </div>
+
+
+    </section>
+
+    <div class="tailor just-flex">
+        <div class="tailor-helper">
+            <h2>Tailor your electric truck</h2>
+            <p>Meet the highest safety and environmental standards for the modern city. Navigate narrow streets and get
+                all the way to the point of delivery with a minimum of noise.</p>
+            <a class="explore-button btn1">
+                <p class="text-btn">Discover our electric trucks</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </div>
+        <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/trucks-landing-volvo-fh16-aero-cgi-exterior-side-1?qlt=82&wid=2560&ts=1709634183462&dpr=off&fit=constrain&fmt=png-alpha"
+            alt="">
+    </div>
+
+    <div class="used-trucks">
+        <div class="just-flex" style="gap: 2rem;">
+            <div class="used-trucks-helper">
+                <h2>Electromobilty made easy</h2>
+                <a class="explore-button btn3" style="color: white;">
+                    <p class="text-btn">Find out more about how to go electric</p><i
+                        class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <div class="used-trucks-helper"
+                style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/electric-landing-person-charging-electric-truck?qlt=82&wid=1440&ts=1706381285349&dpr=off&fit=constrain);">
+                <h2>FAQ about our electric trucks?</h2>
+                <button class="explore-button btn3" style="color: white;">
+                    <p class="text-btn">Read the FAQ</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </button>
+            </div>
+        </div>
+        <div class="used-trucks-helper"
+            style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/gas-powered-landing-truck-driving-trees?qlt=82&wid=2560&ts=1706437501012&dpr=off&fit=constrain);">
+            <h2>Calculate your environmental footprint</h2>
+            <p style="width: 50%; text-align: center;">Get a clear indication of how your trucks can minimize
+                environmental impact in the transport chain.</p>
+            <a class="explore-button btn3" style="color: white;">
+                <p class="text-btn">Read more about and start the calculator</p><i
+                    class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </div>
+    </div>
+
+    <h2 style="margin: 5% auto; text-align: center; font-weight: lighter; font-size: 1.4rem;">Features depicted may not
+        be
+        standard or
+        available for all
+        equipment levels and
+        powertrain options.</h2>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+
+        let arr_trucks = JSON.parse(localStorage.getItem('electric_trucks'));
+
+        let x5 = document.getElementsByClassName("model-card");
+        let arr_model = Array.from(x5);
+
+        arr_model.forEach((element, index) => {
+            element.innerHTML = `
+            <div class="imag"></div>
+                <p class="name">${arr_trucks[index].transportName}</p>
+                <p class="application">${arr_trucks[index].application}</p>
+                <p class="descr">${arr_trucks[index].description.slice(0, 200)}...</p>
+                <a class="explore-button btn2">
+                    <p class="text-btn">Read more about ${arr_trucks[index].transportName}</p><i
+                        class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            `;
+
+            element.getElementsByClassName("explore-button")[0].href = `../electric-trucks/${arr_trucks[index].transportName}.html`;
+            document.getElementsByClassName("imag")[index].style.backgroundImage = `url(${arr_trucks[index].images[0]})`;
+        });
+
+
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+
+        arr_aleg_tip.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (index == 0) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Electric trucks</h2>
+                        <p>Our electric trucks offer zero exhaust emissions, lower noise and less vibrations. They make
+                            transport
+                            cleaner and quieter – and improve the working environment.</p>
+                        <a class="explore-button btn3">
+                            <p class="text-btn">Discover our electric trucks</p><i
+                                class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-cgi-exterior-1?qlt=82&wid=1024&ts=1705310176284&dpr=off&fit=constrain&fmt=png-alpha"
+                    arr_aleg_tip[0].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                }
+                if (index == 1) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Gas-powered trucks</h2>
+                        <p>Our gas-powered trucks reduce your emissions while offering enough engine power and operating range
+                            to cover long distances heavily loaded. And they can lower your fuel costs too.</p>
+                        <a class="explore-button btn3">
+                            <p class="text-btn">Discover our gas-powered trucks</p><i
+                                class="fa-solid fa-chevron-right arrow-icon"></i>
+                        </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/trucks-landing-volvo-gas-powered-cgi-exterior-1?qlt=82&wid=2560&ts=1709634183512&dpr=off&fit=constrain&fmt=png-alpha"
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip tip-active`;
+                }
+            })
+        });
+
+
+    </script>
+
+</body>
+
+
+
+</html>

@@ -1,0 +1,465 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo FM</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-pedestrian-crossing?qlt=82&wid=1024&ts=1705321931203&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-sneak-peak?qlt=82&wid=1440&ts=1705321931116&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-cgi-exterior-front-1?qlt=82&wid=2560&ts=1706087771036&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-unloading-cargo?qlt=82&wid=1920&ts=1706381109295&dpr=off&fit=constrain);
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-driver-turning?qlt=82&wid=2560&ts=1705321884899&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html" class="active-model">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo FM.html">Volvo FM</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo FM.</h2>
+            <h2>The flexible specialist.</h2>
+        </div>
+        <p>The Volvo FM is a flexible heavy-duty truck for active drivers, and it’s ready to take on any assignment with
+            ease. Tailor yours for anything from regional transport assignments to specialized missions around urban
+            areas requiring rigid trucks. Choose between electric, gas and diesel.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks – The power of the Volvo FH16 Aero.webm" preload="metadata" loop autoplay
+            muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <h2>Choose your alternative fuel</h2>
+        <div class="select">
+            <p class="aleg-tip tip-active">Diesel</p>
+            <p class="aleg-tip">Electric</p>
+            <p class="aleg-tip">Gas-powered</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>Volvo FM</h2>
+                <p><span>Applications: </span>Regional-haul transport assignments, chemical and petroleum transport,
+                    delivery transport, waste and recycling transport, public service and utility transport</p>
+                <p><span>Power: </span>330–500 hp</p>
+                <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                <a class="explore-button btn3" id="btn-get-now5">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-deisel-cgi-exterior-1?qlt=82&wid=2560&ts=1705323435777&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="sec2">
+        <div>
+            <h2>A cab designed for busy days</h2>
+        </div>
+        <p>The Volvo FM offers comfort and space in the same league as its bigger siblings. The direct vision and
+            supporting solutions cater for a high level of safety in urban areas. Take a closer look at the truck’s
+            superior working environment in the gallery below.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop
+                autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Camera Monitor System</h2>
+            <p>The Camera Monitor System clears the direct view and opens up your visual field in both good and
+                challenging conditions. Night vision improves your view in the dark. With the passenger corner camera,
+                you uncover the hidden area close to the truck on the passenger side to improve safety.</p>
+        </div>
+
+        <div>
+            <h2>Infotainment and audio</h2>
+            <p>A driver interface that’s easy to use, an infotainment system and an audio system available in two levels
+                make the Volvo FM a comfortable experience, whether you're driving or resting.</p>
+        </div>
+
+        <div>
+            <h2>Closer to the ground</h2>
+            <p>The Volvo FM's cab design is low with a driving position close to the ground. From here, making eye
+                contact with other road users and having control of the areas close to the truck is easier. And the more
+                you get in and out of the cab during the day, the more you’ll love the convenient height. For electric
+                city assignments, there’s a super-smooth low entry version available.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">Tailor your Volvo FM</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">A wide range of accessible cabs. The choice of electric,
+                        gas-powered and diesel powertrains. A chassis that can be prepared for whatever superstructure
+                        and task you could ask for. And energy-saving features like drag-free disc brakes. Make it ready
+                        for any assignment. Truck Builder is available in various markets, find yours here:</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="imag-container"></div>
+        <div class="sec2-alt-text">
+            <h2>Volvo Dynamic Steering</h2>
+            <p>Volvo Dynamic Steering is like a helping hand that makes your driving easier and more precise, and
+                relieves the strain. It also adds functionality to your driver support systems, with active steering in
+                different situations. And should you blow a tire, the system will help you keep a steady course until
+                you stop.</p>
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="sec2-alt-text">
+            <h2>Perfect gear changes with I-Shift</h2>
+            <p>I-Shift offers a range of transmissions that makes your driving easy and efficient. It can be used for
+                everything from long-haul and construction transport to city deliveries. A line of packages lets you
+                tailor it to your needs with one-pedal driving functions and more. Should that not be enough, the
+                I-Shift Dual Clutch changes gear without interruption in power delivery. </p>
+        </div>
+        <div class="imag-container"
+            style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-city?qlt=82&wid=2560&ts=1705321703000&dpr=off&fit=constrain);">
+        </div>
+    </section>
+
+    <section class="sec2-alt">
+        <div class="imag-container"
+            style="background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-cyclist?qlt=82&wid=2560&ts=1705321750613&dpr=off&fit=constrain);">
+        </div>
+        <div class="sec2-alt-text">
+            <h2>Driver support systems for your safety</h2>
+            <p>If there’s a certain risk of a collision ahead, Collision Warning with Emergency Brake is there to alert
+                you and apply the brakes if needed. Side Collision Avoidance Support and Door Opening Warning cover both
+                your sides. They use radar sensors to reduce the risk of collisions with vehicles and other road users
+                and warn you from opening the doors – if there’s a risk of a collision. All directions count in safety.
+            </p>
+        </div>
+    </section>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+        arr_aleg_tip.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (index == 0) {
+                    arr_info_helper[0].innerHTML = `
+                        <h2>Volvo FM</h2>
+                    <p><span>Applications: </span>Regional-haul transport assignments, chemical and petroleum transport,
+                        delivery transport, waste and recycling transport, public service and utility transport</p>
+                    <p><span>Power: </span>330–500 hp</p>
+                    <p><span>Availability: </span>Asia/Pacific, Europe, Middle East, Africa and Latin America</p>
+                    <a class="explore-button btn3">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-deisel-cgi-exterior-1?qlt=82&wid=2560&ts=1705323435777&dpr=off&fit=constrain&fmt=png-alpha";
+                    arr_aleg_tip[0].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+                if (index == 1) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FM Electric</h2>
+                            <p><span>Applications: </span>Regional-haul and delivery transport assignments, waste and recycling transport, container transport, building and construction transport, public service and utility transport</p>
+                            <p><span>Combination weight: </span>44 tonnes</p>
+                            <p><span>Power: </span>up to 490 kW</p>
+                            <p><span>Range: </span>up to 300 km</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Read more about the Volvo FM Electric</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-electric-cgi-exterior-1?qlt=82&wid=2560&ts=1705321876359&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+
+                if (index == 2) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FM gas-powered</h2>
+                            <p><span>Applications: </span>Regional-haul transport assignments, container transport, chemical and petroleum transport</p>
+                            <p><span>Power: </span>420–500 hp</p>
+                            <p><span>Range: </span>up to 1000 km</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Read more about the Volvo FM gas-powered</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-gas-powered-cgi-exterior-4?qlt=82&wid=2560&ts=1705321876340&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip tip-active`;
+                }
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

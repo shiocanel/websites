@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo VM</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-trucks-global-vm-applications?qlt=82&wid=1440&ts=1581839646673&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-truck-global-availability?qlt=82&wid=1440&ts=1581839744512&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-cgi-exterior-front-1?qlt=82&wid=2560&ts=1706022074038&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-heavy-transport-1?qlt=82&wid=1920&ts=1705301662668&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/contact-markets-bg?qlt=82&wid=2560&ts=1684219948755&dpr=off&fit=constrain);
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .sec2-alt .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-steering-wheel?qlt=82&wid=1024&ts=1705301668579&dpr=off&fit=constrain);
+            width: 80%;
+            height: inherit;
+            background-position: center;
+            background-size: cover;
+        }
+
+        .sec2-alt {
+            width: 100%;
+            height: 60vh;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            gap: 10%;
+            margin: 5% 0;
+        }
+
+        .sec2-alt .sec2-alt-text {
+            width: 60%;
+        }
+
+        .sec2-alt .sec2-alt-text:nth-child(1) {
+            margin-left: 10%;
+        }
+
+        .sec2-alt p {
+            width: 90%;
+            font-size: 1.2rem;
+        }
+
+        .sec2-alt h2 {
+            font-size: 1.6rem;
+        }
+
+        .bg-sur {
+            background-color: rgb(248, 248, 248);
+            padding: 5% 0;
+            margin-bottom: 5%;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../trucks/All models.html">All models</a>
+            <a href="../trucks/Volvo FH16 Aero.html">Volvo FH16 Aero</a>
+            <a href="../trucks/Volvo FH Aero.html">Volvo FH Aero</a>
+            <a href="../trucks/Volvo FH16.html">Volvo FH16</a>
+            <a href="../trucks/Volvo FH.html">Volvo FH</a>
+            <a href="../trucks/Volvo FMX.html">Volvo FMX</a>
+            <a href="../trucks/Volvo FM.html">Volvo FM</a>
+            <a href="../trucks/Volvo FE.html">Volvo FE</a>
+            <a href="../trucks/Volvo FL.html">Volvo FL</a>
+            <a href="../trucks/Volvo VM.html" class="active-model">Volvo VM</a>
+            <a href="../trucks/Volvo VNL series.html">Volvo VNL series</a>
+            <a href="../trucks/Volvo VNR series.html">Volvo VNR series</a>
+            <a href="../trucks/Volvo VNX series.html">Volvo VNX series</a>
+            <a href="../trucks/Volvo VHD series.html">Volvo VHD series</a>
+            <a href="../trucks/Volvo VAH series.html">Volvo VAH series</a>
+            <a href="../trucks/Used Trucks.html">Used Trucks</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../trucks/All models.html">All models</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../trucks/Volvo VM.html">Volvo VM</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo VM.</h2>
+            <h2>A truck for every purpose.</h2>
+        </div>
+        <p>Versions galore mean that there's a Volvo VM that suits your requirements. Finding the right truck has never
+            been easier - and productivity benefits as a result. Crossing the country from the north to the south? Or
+            distributing goods in tight city traffic? A Volvo VM is a perfect choice for any assignment. It’s easy to
+            tailor it depending on your requirements, making transportation productive and economical.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop autoplay
+            muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <h2>Choose your alternative fuel</h2>
+        <div class="select">
+            <p class="aleg-tip tip-active">Diesel</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>Volvo VM</h2>
+                <p><span>Applications: </span>Short and medium-haul, chemical and petroleum transport,
+                    delivery transport, regional distribution, public service and utility transport</p>
+                <p><span>Power: </span>330–500 hp</p>
+                <p><span>Availability: </span>Latin America</p>
+                <a class="explore-button btn3" id="btn-get-now8">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-deisel-cgi-exterior-1?qlt=82&wid=2560&ts=1705323435777&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="sec2">
+        <div>
+            <h2>Designed for the challenge</h2>
+        </div>
+        <p>The design emphasizes city functionality with distinctively shaped and energy-efficient LED lights, large
+            windows and slim mirrors. Optimal visibility and a choice of three cab models cater to various needs,
+            ensuring a safe and versatile urban driving experience.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop
+                autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Powerful and economical</h2>
+            <p>Flexibility, power, torque and quick response. That’s what characterises Volvo engines. And yet, they
+                also built with consideration for the environment. Electronically controlled engines are durable and
+                easy to maintain, and always perfectly synced with Volvo I-Shift, manual or automatic gearboxes.</p>
+        </div>
+
+        <div>
+            <h2>Modern design and great load capacity</h2>
+            <p>A modern chassis with low weight gives a high load capacity. The frame is completely straight and
+                parallel behind the cab, making the bodybuilder’s job much easier. The right superstructure delivers
+                profitability.</p>
+        </div>
+
+        <div>
+            <h2>Comfort and safety</h2>
+            <p>The Volvo VM cabs radiate a particular confidence. The V-shaped LED lamps, the big windshield and the
+                elegantly shaped grille add to a thoroughly modern look. Safety is built into this cab: in its
+                structure, its reinforced seats, its innovative protection systems, and more besides.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">Tailor your Volvo FH</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">Electric, gas-powered or diesel. Five cab sizes. A range
+                        of exterior and interior trim levels. And a broad selection of options like drag-free disc
+                        brakes and I-Save, to make driving even more efficient, safe and productive. Truck Builder is
+                        available in selected markets, choose yours here:</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+    <script>
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+    </script>
+
+</body>
+
+</html>

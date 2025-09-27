@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo FH Aero gas-powered</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-cms-mountains?qlt=82&wid=1024&ts=1705319707258&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-front-peak?qlt=82&wid=1440&ts=1705319707109&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-cgi-exterior-front-1?qlt=82&wid=2560&ts=1706022245103&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-wind-turbines?qlt=82&wid=1920&ts=1705319871975&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-road-surface?qlt=82&wid=1920&ts=1706381053585&dpr=off&fit=constrain);
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../gas-trucks/">Gas-powered trucks</a>
+            <a href="../gas-trucks/Volvo FH Aero gas-powered.html" class="active-model">Volvo FH Aero gas-powered</a>
+            <a href="../gas-trucks/Volvo FH gas-powered.html">Volvo FH gas-powered</a>
+            <a href="../gas-trucks/Volvo FM gas-powered.html">Volvo FM gas-powered</a>
+            <a href="../gas-trucks/Volvo FE CNG.html">Volvo FE CNG</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../gas-trucks/Gas Powered.html">Gas-powered</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../gas-trucks/Volvo FH Aero gas-powered.html">Volvo FH Aero gas-powered</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo FH16 Aero.</h2>
+            <h2>Efficient heavy transport.</h2>
+        </div>
+        <p>The Volvo FH16 Aero is a truck for heavy transport, shaped and powered for extended productivity. The
+            aerodynamic design, together with the powerful D17 engine, lets you boost your performance while saving
+            fuel. A great driving experience is also part of the package.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop autoplay
+            muted></video>
+    </div>
+
+    <div class="tip-truck">
+        <div class="select">
+            <p class="aleg-tip tip-active">The One</p>
+        </div>
+
+        <div class="tip-info">
+            <div class="tip-info-helper">
+                <h2>Volvo FH16 Aero</h2>
+                <p><span>Applications: </span>Heavy transport assignments</p>
+                <p><span>Power: </span>600–780 hp</p>
+                <p><span>Availability: </span>See market sites for details</p>
+                <a class="explore-button btn3">
+                    <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-cgi-exterior-1?qlt=82&wid=2560&ts=1706022245131&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="" class="tip-info-helper">
+        </div>
+    </div>
+
+    <section class="sec2">
+        <div>
+            <h2>Efficiency and comfort for your needs</h2>
+        </div>
+        <p>Take a closer look at the aerodynamic truck design with the Camera Monitor System: reducing drag to save fuel
+            while also improving direct vision. Experience the comfort of the Globetrotter XXL cab. Explore the gallery
+            below to really get to know the Volvo FH16 Aero.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – The Volvo FH16 - Interior Walkaround.webm" preload="metadata" loop
+                autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Camera Monitor System</h2>
+            <p>The Camera Monitor System improves aerodynamics to save you fuel. It also opens up your visual field in
+                both good and challenging conditions. </p>
+        </div>
+
+        <div>
+            <h2>Infotainment and audio</h2>
+            <p>A driver interface that’s easy to use, an infotainment system and an audio system available in two levels
+                make the Volvo FH16 Aero a comfortable experience, whether you're driving or resting.</p>
+        </div>
+
+        <div>
+            <h2>Globetrotter XXL cab comfort</h2>
+            <p>The Volvo FH16 Aero is made to maximize your life on the road. Go all the way with the Globetrotter XXL
+                cab. Even more space, more comfort, and a bigger bed. </p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-truck">
+            <div class="main-truck-help">
+                <section>
+                    <h2 style="width: 60%;">Create your Volvo FH16 Aero</h2>
+                    <p style="width: 60%; margin-bottom: 4rem;">A powerful character with an aerodynamic design and
+                        drag-free disc brakes to
+                        minimize your carbon
+                        footprint and reduce your fuel costs. Tailor your Volvo FH16 Aero for heavy transport
+                        assignments.
+                        Truck
+                        Builder is available in selected markets, choose yours here:</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </section>
+                <div class="imag-container"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Powered for performance and efficiency</h2>
+        </div>
+        <p>The D17 is the most powerful engine ever put in a Volvo truck. But it’s the fuel efficiency and the high
+            torque that make the Volvo FH16 Aero the perfect match for demanding heavy transport assignments with high
+            average speeds.</p>
+    </section>
+
+    <div class="imag-container singur"></div>
+
+    <div class="info-truck">
+        <div>
+            <h2>Up to 780 hp</h2>
+            <p>The D17 is a 17-litre inline six-cylinder engine, with low weight and high efficiency. Choose between 600
+                hp, 700 hp and 780 hp. </p>
+        </div>
+        <div>
+            <h2>More efficiency and higher torque</h2>
+            <p>The Volvo FH16 Aero engines all deliver more power, up to 3800 Nm of torque and more engine braking power
+                at low engine speeds. This means you can tailor a smooth, powerful and efficient powertrain and
+                potentially reduce your fuel costs.</p>
+        </div>
+        <div>
+            <h2>Perfect gear changes with I-Shift</h2>
+            <p>With I-Shift, every gear change is smooth and timed by the millisecond. It makes your driving comfortable
+                and efficient. A choice of software packages lets you tailor your I-Shift for your heavy transport
+                needs.</p>
+        </div>
+        <div>
+            <h2>Volvo Dynamic Steering: a steady hand</h2>
+            <p>Maneuvering heavy loads at low speed, precise and controlled? Like a steady hand, Volvo Dynamic Steering
+                is there to make your driving easier. It also offers interaction with your driver support systems.</p>
+        </div>
+    </div>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+</body>
+
+</html>

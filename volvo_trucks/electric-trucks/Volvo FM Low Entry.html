@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volvo FM Low Entry</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        .sec2 {
+            margin: 5% auto;
+            display: flex;
+            width: 70%;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sec2 p {
+            width: 50%;
+            font-size: 1.2rem;
+        }
+
+        .sec2 div {
+            width: 50%;
+            font-size: 1.4rem;
+        }
+
+
+        .tip-info-helper * {
+            color: black;
+        }
+
+        .tip-info-helper span {
+            font-weight: bold;
+            color: var(--black);
+        }
+
+        .truck-galerie {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        .truck-galerie .video-container {
+            display: flex;
+            gap: 20px;
+            height: 70vh;
+        }
+
+        .truck-galerie .imag-container {
+            width: 50%;
+            height: 70vh;
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video {
+            transition: all 0.2s ease;
+        }
+
+        .truck-galerie video:hover,
+        .truck-galerie .imag-container:hover {
+            filter: brightness(50%);
+            transition: all 0.2s ease;
+            cursor: pointer;
+        }
+
+        .truck-galerie .imag-container:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-low-entry-driving-down-street?qlt=82&wid=1024&ts=1705331799819&dpr=off&fit=constrain);
+        }
+
+        .truck-galerie .imag-container:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-low-entry-driver-sunglasses?qlt=82&wid=1440&ts=1705331799836&dpr=off&fit=constrain);
+        }
+
+        .specif-truck {
+            display: flex;
+            justify-content: space-between;
+            width: 70%;
+            margin: 5% auto;
+            gap: 3rem;
+        }
+
+        .specif-truck div {
+            width: 100%;
+            font-size: 1.2rem;
+        }
+
+        .specif-truck h2 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .main-truck {
+            width: 100%;
+            height: 90vh;
+            background-color: rgb(240, 240, 240);
+        }
+
+        .main-truck-help {
+            width: 70%;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .main-truck-help section {
+            width: 100%;
+        }
+
+        .main-truck h2 {
+            font-size: 2.2rem;
+        }
+
+        .main-truck-help .imag-container {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-electric-cgi-exterior-side-2?qlt=82&wid=2560&ts=1706087279160&dpr=off&fit=constrain&fmt=png-alpha);
+            width: 100%;
+            height: 90vh;
+            background-size: 100%;
+        }
+
+        .singur {
+            width: 80%;
+            height: 100vh;
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh16-aero-wind-turbines?qlt=82&wid=1920&ts=1705319871975&dpr=off&fit=constrain);
+            margin: 5% auto;
+        }
+
+        .sec5 {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-low-entry-house-facade-sky?qlt=82&wid=3840&ts=1706381582981&dpr=off&fit=constrain);
+            background-attachment: fixed;
+        }
+
+        .info-truck {
+            display: flex;
+            flex-wrap: wrap;
+            width: 80%;
+            justify-content: space-between;
+            margin: 3% auto;
+        }
+
+        .info-truck div {
+            width: 45%;
+            margin-bottom: 5%;
+            font-size: 1.2rem;
+        }
+
+        .info-truck h2 {
+            font-size: 1.6rem;
+            margin-bottom: 1rem;
+        }
+
+        .specif-truck-img {
+            display: flex;
+        }
+
+        .specif-truck-img img {
+            width: 50%;
+        }
+
+        .specif-truck-img div {
+            width: 100%;
+            font-size: 1.4rem;
+            font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="header-container"></div>
+
+    <div class="models-container">
+        <ul class="models">
+            <a href="../electric-trucks/Electric Trucks.html">Electric trucks</a>
+            <a href="../electric-trucks/Volvo FH Aero Electric.html">Volvo FH Aero Electric</a>
+            <a href="../electric-trucks/Volvo FH Electric.html">Volvo FH Electric</a>
+            <a href="../electric-trucks/Volvo FMX Electric.html">Volvo FMX Electric</a>
+            <a href="../electric-trucks/Volvo FM Electric.html">Volvo FM Electric</a>
+            <a href="../electric-trucks/Volvo FM Low Entry.html" class="active-model">Volvo FM Low Entry</a>
+            <a href="../electric-trucks/Volvo FE Electric.html">Volvo FE Electric</a>
+            <a href="../electric-trucks/Volvo FL Electric.html">Volvo FL Electric</a>
+            <a href="../electric-trucks/Why Electric Trucks.html">Why electric trucks?</a>
+            <a href="../electric-trucks/FAQ.html">FAQ</a>
+        </ul>
+    </div>
+
+    <section class="path">
+        <a href="../main/index.html">Trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="" href="../electric-trucks/Electric Trucks.html">Electric trucks</a>
+        <i class="fa-solid fa-chevron-right"></i>
+        <a class="path-current" href="../electric-trucks/Volvo FM Low Entry.html">Volvo FM Low Entry</a>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Volvo FM Low Entry</h2>
+        </div>
+        <p>
+            Volvo FM Low Entry is an electric truck with excellent visibility and driver comfort. It's the perfect
+            choice for when you need a high-capacity truck for any city segment, such as waste collection, construction
+            work or goods delivery. Choose from different cab and chassis configurations to suit your needs.</p>
+    </section>
+
+    <div class="video-container">
+        <video src="../video/Volvo Trucks – See the new Volvo FH16 Aero with D17 engine.webm" preload="metadata" loop
+            autoplay muted></video>
+    </div>
+
+    <section class="sec2">
+        <div>
+            <h2>Excellent visibility and comfort</h2>
+        </div>
+        <p>In the driver’s seat, you’re close to the street and the low cab ensures a maximized direct view. As a
+            result, the Volvo FM is capable of achieving even the most stringent safety standards for direct vision.</p>
+    </section>
+
+    <section class="truck-galerie">
+        <div class="video-container">
+            <video src="../video/Volvo Trucks – Volvo FM Low Entry. Protecting what matters.webm" preload="metadata"
+                loop autoplay muted></video>
+        </div>
+
+        <div class="just-flex" style="gap: 20px;">
+            <div class="imag-container"></div>
+            <div class="imag-container"></div>
+        </div>
+    </section>
+
+    <section class="specif-truck">
+        <div>
+            <h2>Enter and exit smoothly</h2>
+            <p>The low-entry cab is perfect when you enter and exit the cab frequently during your shift. The driver can
+                easily enter and exit on the passenger side for improved safety and convenience. In the end, it can make
+                your working environment more ergonomic and even safer. </p>
+        </div>
+
+        <div>
+            <h2>Easy to drive</h2>
+            <p>The smooth electric powertrain and Volvo Dynamic Steering as standard make the truck easy to maneuver
+                through narrow streets. The easy driving experience can help drivers have a more enjoyable and relaxed
+                work shift.</p>
+        </div>
+
+        <div>
+            <h2>Make room for a crew</h2>
+            <p>The Volvo FM Low Entry can be tailored either for the driver only, for one passenger, or up to three
+                passengers. This means that the truck can be used within a wide range of applications – from deliveries
+                to waste collection, municipal operations and construction work.</p>
+        </div>
+    </section>
+
+    <section class="sec2">
+        <div>
+            <h2>Ready for the city</h2>
+        </div>
+        <p>In the Volvo FM Low Entry, you’ll enjoy better direct vision than in most other trucks. It can enable your
+            operation to fulfill the most stringent safety regulations for cities. On top of it all, it offers a smooth
+            and easy drive, and you’ll be able to carry out heavy-duty transport with zero tailpipe emissions.</p>
+    </section>
+
+    <div class="video-container" style="width: 80%; margin: 0 auto;">
+        <video src="../video/Volvo Trucks – The power of the Volvo FH16 Aero.webm" preload="metadata" loop autoplay
+            muted></video>
+    </div>
+
+    <section class="specif-truck-img">
+        <div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-electric-object-parcel-black-3?qlt=82&wid=768&ts=1705991489613&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="">
+            <p>Up to 44 tonnes GCW</p>
+        </div>
+
+        <div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-electric-sustainability-ev-charge-black-3?qlt=82&wid=768&ts=1705991489593&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="">
+            <p>Up to 300 km range</p>
+        </div>
+
+        <div>
+            <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-electric-object-speed-black-3?qlt=82&wid=768&ts=1705991489641&dpr=off&fit=constrain&fmt=png-alpha"
+                alt="">
+            <p>Up to 490 kW power</p>
+        </div>
+    </section>
+
+    <h2 style="text-align: center; margin: 5% 0; margin-top: 10%; font-size: 2rem;">Volvo FH Electric specifications
+    </h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Features</th>
+                <th>Volvo FH Aero Electric</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-label="Features">Axle Configurations​</td>
+                <td data-label="Volvo">Tractor: 4×2, 6×2​, 6x4,<br>
+                    Rigid: 4×2, 6×2, 6×4, 8×2, 8×4<br>
+                    All axles are air suspended</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Cab</td>
+                <td data-label="Volvo">Low sleeper cab, sleeper cab,
+                    Globetrotter cab, Globetrotter XL cab</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Gross Combination Weight</td>
+                <td data-label="Volvo">Up to 44 tonnes</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Battery capacity</td>
+                <td data-label="Volvo">360–540 kWh, 4-6 batteries</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Range</td>
+                <td data-label="Volvo">Up to 300 km (4x2 tractor trailer)</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Charging time (full charge​)</td>
+                <td data-label="Volvo">9.5h with AC (43 kW)<br>
+                    ​2.5h with DC (250 kW)</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Powertrain</td>
+                <td data-label="Volvo">2–3 electric motors, I-Shift gearbox</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Performance</td>
+                <td data-label="Volvo">Up to 330–490 kW continuous power</td>
+            </tr>
+            <tr>
+                <td data-label="Features">Applications</td>
+                <td data-label="Volvo">Suitability for body-work. 3 PTO:s
+                    (electrical, mechanical and transmission)</td>
+            </tr>
+            <!-- <tr>
+                <td data-label="Features"></td>
+                <td data-label="Volvo"></td>
+            </tr> -->
+        </tbody>
+    </table>
+
+    <h3 style="text-align: center; margin: 3%; font-weight: lighter;">Features depicted may not be standard or available
+        for all equipment levels and powertrain options.</h3>
+
+
+    <section class="sec5">
+        <div class="bg">
+            <div class="container">
+                <h2>How do you say Volvo in your language?</h2>
+                <p>You're currently browsing the Volvo Trucks global site. To find information which is more specific to
+                    your own location, you can navigate to one of our individual market sites. Follow the link below to
+                    find
+                    out what we're doing near you.</p>
+            </div>
+        </div>
+    </section>
+
+    <div id="footer-container"></div>
+
+
+    <script>
+
+        let aux_info_helper = document.getElementsByClassName("tip-info-helper");
+        let arr_info_helper = Array.from(aux_info_helper);
+
+        aux_info_helper = document.getElementsByClassName("aleg-tip");
+        let arr_aleg_tip = Array.from(aux_info_helper);
+
+
+        arr_aleg_tip.forEach((element, index) => {
+            element.addEventListener("click", () => {
+                if (index == 0) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FH16 Aero</h2>
+                            <p><span>Applications: </span>Efficient long-haul transportation</p>
+                            <p><span>Power: </span>420–540 hp</p>
+                            <p><span>Availability: </span>See market sites for details</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">GET NOW!</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-diesel-cgi-exterior-2?qlt=82&wid=1024&ts=1706022305150&dpr=off&fit=constrain&fmt=png-alpha";
+                    arr_aleg_tip[0].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+                if (index == 1) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FH Aero Electric</h2>
+                            <p><span>Applications: </span>Regional-haul and interregional-haul transport assignments</p>
+                            <p><span>Combination weight: </span>44 tonnes</p>
+                            <p><span>Power: </span>up to 490 kW</p>
+                            <p><span>Range: </span>up to 300 km</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Read more about the Volvo FH Aero Electric</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-electric-cgi-exterior-2?qlt=82&wid=1024&ts=1706022305176&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip tip-active`;
+                    arr_aleg_tip[2].className = `aleg-tip`;
+                }
+
+                if (index == 2) {
+                    arr_info_helper[0].innerHTML = `
+                            <h2>Volvo FH Aero gas-powered</h2>
+                            <p><span>Applications: </span>Long-haul and interregional-haul transport assignments</p>
+                            <p><span>Power: </span>420–500 hp</p>
+                            <p><span>Range: </span>up to 1000 km</p>
+                            <a class="explore-button btn3">
+                                <p class="text-btn">Read more about the Volvo FH Aero gas-powered</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                            </a>
+                            `;
+                    arr_info_helper[1].src = "https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fh-aero-gas-powered-cgi-exterior-5?qlt=82&wid=1024&ts=1706022305190&dpr=off&fit=constrain&fmt=png-alpha";
+
+                    arr_aleg_tip[0].className = `aleg-tip`;
+                    arr_aleg_tip[1].className = `aleg-tip`;
+                    arr_aleg_tip[2].className = `aleg-tip tip-active`;
+                }
+            })
+        });
+
+    </script>
+
+</body>
+
+</html>

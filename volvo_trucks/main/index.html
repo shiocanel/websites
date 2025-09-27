@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+
+    <script src="https://kit.fontawesome.com/b6e2d29e40.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="../main/myStyle.css">
+    <script type="module">
+        import header from "../main/header.js";
+        import footer from "../main/footer.js";
+
+        document.getElementById("header-container").innerHTML = header();
+        document.getElementById("footer-container").innerHTML = footer();
+    </script>
+
+    <script src="../main/myScript.js" defer></script>
+
+    <style>
+        body {
+            width: 100%;
+        }
+
+        .sec2 {
+            width: 100%;
+            height: 140vh;
+            background-color: white;
+        }
+
+        .info-imag {
+            width: 100%;
+            height: 70vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-position: center;
+            background-size: cover;
+            color: white;
+        }
+
+        .sec2 div:nth-child(1) .info-imag:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/market-landing-transport-solutions-mirrored-in-water?qlt=82&wid=2560&ts=1705306447740&dpr=off&fit=constrain);
+        }
+
+        .sec2 div:nth-child(2) .info-imag:nth-child(1) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/market-landing-volvo-trucks-grille-close-up?qlt=82&wid=2560&ts=1741354193495&dpr=off&fit=constrain);
+        }
+
+        .sec2 div:nth-child(2) .info-imag:nth-child(2) {
+            background-image: url(https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/volvo-fm-house-facade-sky?qlt=82&wid=2560&ts=1706380817090&dpr=off&fit=constrain);
+        }
+
+        .info-imag h2 {
+            font-size: 2.4rem;
+        }
+
+        .info-imag p {
+            font-size: 1.2rem;
+        }
+
+        .info-imag h2,
+        .info-imag p,
+        .info-imag .explore-button {
+            margin: 0.4rem 11rem;
+        }
+
+        .info-imag .text-btn {
+            margin: 0;
+        }
+
+        .sec2 div:nth-child(1) .info-imag:nth-child(1) {
+            color: black;
+        }
+
+        .sec3 {
+            width: 70%;
+            margin: 0 auto;
+            margin-top: 5rem;
+        }
+
+        .release {
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+        }
+
+        .rel-card img {
+            width: 100%;
+        }
+
+        .sec3 h2 {
+            font-size: 2.2rem;
+        }
+
+        .data p {
+            font-size: 1.2rem;
+            margin: 1rem 0;
+            color: var(--gray1);
+            font-weight: bold;
+        }
+
+        .rel-card {
+            cursor: pointer;
+        }
+
+        .rel-card h2 {
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+        }
+
+        .rel-card .descr {
+            font-size: 1.2rem;
+            color: var(--gray);
+        }
+
+        .subscribe-container {
+            text-align: center;
+            background: #f7f7f7;
+            padding: 5rem;
+            margin: 5% 0;
+        }
+
+        .subscribe-container h2 {
+            margin-bottom: 3rem;
+            font-size: 2rem;
+        }
+
+        .subscribe-form {
+            display: flex;
+            justify-content: center;
+            gap: 8px;
+            margin-bottom: 1.4rem;
+            flex-wrap: wrap;
+        }
+
+        .subscribe-form input[type="email"] {
+            padding: 10px 15px;
+            font-size: 1.2rem;
+            border: 2px solid #000000;
+            border-radius: 4px;
+            width: 30rem;
+        }
+
+        .subscribe-form .explore-button,
+        .subscribe-form input {
+            border: 1px solid black !important;
+        }
+
+        .checkbox-container {
+            display: flex;
+            align-items: flex-start;
+            justify-content: center;
+            gap: 10px;
+            max-width: 600px;
+            margin: 0 auto;
+            font-size: 14px;
+        }
+
+        .checkbox-container input[type="checkbox"] {
+            margin-top: 3px;
+        }
+
+        .checkbox-container a {
+            color: #0074cc;
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    </style>
+    </head>
+
+    <body>
+        <div id="header-container"></div>
+
+        <div class="video-container">
+            <video src="../video/Volvo Trucks - The Epic Split feat. Van Damme.webm" preload="metadata" loop autoplay
+                muted></video>
+        </div>
+
+        <section class="sec2">
+            <div style="display: flex; justify-content: space-between; width: 100%; height: 70vh;">
+                <div class="info-imag">
+                    <h2>Welcome to Volvo Trucks</h2>
+                    <p>Find out more about what we do, get to know our trucks and services, and read the latest news,
+                        company info and press releases.</p>
+                </div>
+                <div class="info-imag"></div>
+            </div>
+            <div style="display: flex; justify-content: space-between; width: 100%; height: 70vh;">
+                <div class="info-imag">
+                    <h2>Trucks</h2>
+                    <p>Get to know our trucks and explore the wide range of choices and details available.</p>
+                    <a class="explore-button" href="../trucks/All models.html">
+                        <p class="text-btn">Explore the trucks</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </div>
+                <div class="info-imag">
+                    <h2>News & insights</h2>
+                    <p>The latest news from Volvo Trucks. Here you'll find stories, insights from industry experts, case
+                        studies and way more</p>
+                    <a class="explore-button" href="">
+                        <p class="text-btn">Read the stories</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sec3">
+            <div class="just-flex" style="margin: 2rem 0;">
+                <h2>Press releases</h2>
+                <p>Browse the latest press releases from Volvo Trucks.</p>
+            </div>
+            <div class="release">
+                <div class="rel-card">
+                    <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/dji-0057?size=1280,720&scl=1"
+                        alt="">
+                    <div class="just-flex data">
+                        <p>Press releases</p>
+                        <p>2025-05-12</p>
+                    </div>
+                    <h2>Volvo Trucks takes aerodynamics one step further – inspired by the
+                        aerospace industry</h2>
+                    <p class="descr">Volvo Trucks introduces new aerodynamic improvements by applying a proven concept
+                        from
+                        the aerospace industry to its heavy-duty trucks. Discreet but impactful modifications to the
+                        truck
+                        cab will reduce drag, fuel consumption and CO2 significantly.</p>
+                </div>
+                <div class="rel-card">
+                    <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/dji-0057?size=1280,720&scl=1"
+                        alt="">
+                    <div class="just-flex data">
+                        <p>Press releases</p>
+                        <p>2025-05-12</p>
+                    </div>
+                    <h2>Volvo Trucks takes aerodynamics one step further – inspired by the aerospace industry</h2>
+                    <p class="descr">Volvo Trucks introduces new aerodynamic improvements by applying a proven concept
+                        from
+                        the aerospace industry to its heavy-duty trucks. Discreet but impactful modifications to the
+                        truck
+                        cab will reduce drag, fuel consumption and CO2 significantly.</p>
+                </div>
+                <div class="rel-card">
+                    <img src="https://assets.volvo.com/is/image/VolvoInformationTechnologyAB/dji-0057?size=1280,720&scl=1"
+                        alt="">
+                    <div class="just-flex data">
+                        <p>Press releases</p>
+                        <p>2025-05-12</p>
+                    </div>
+                    <h2>Volvo Trucks takes aerodynamics one step further – inspired by the aerospace industry</h2>
+                    <p class="descr">Volvo Trucks introduces new aerodynamic improvements by applying a proven concept
+                        from
+                        the aerospace industry to its heavy-duty trucks. Discreet but impactful modifications to the
+                        truck
+                        cab will reduce drag, fuel consumption and CO2 significantly.</p>
+                </div>
+            </div>
+            <a class="explore-button btn1" style="margin: 40px auto;" href="">
+                <p class="text-btn">Read more press releases</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+            </a>
+        </section>
+
+        <div class="subscribe-container">
+            <h2>Subscribe to Volvo Trucks Press releases</h2>
+            <form class="subscribe-form">
+                <input type="email" placeholder="Email address" required>
+                <a class="explore-button btn1" href="../trucks/All models.html">
+                    <p class="text-btn">Subscribe</p><i class="fa-solid fa-chevron-right arrow-icon"></i>
+                </a>
+            </form>
+            <div class="checkbox-container">
+                <input type="checkbox" id="consent">
+                <label for="consent">
+                    I agree to receive corporate communications, press releases, and company news from Volvo Trucks and
+                    understand I can withdraw consent anytime.
+                    For details on data management, see our <a href="#">Privacy Policy</a>.
+                </label>
+            </div>
+        </div>
+
+        <section class="sec5">
+            <div class="bg">
+                <div class="container">
+                    <h2>How do you say Volvo in your language?</h2>
+                    <p>You're currently browsing the Volvo Trucks global site. To find information which is more
+                        specific to
+                        your own location, you can navigate to one of our individual market sites. Follow the link below
+                        to
+                        find
+                        out what we're doing near you.</p>
+                </div>
+            </div>
+        </section>
+
+        <div id="footer-container"></div>
+
+    </body>
+
+</html>
